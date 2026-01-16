@@ -1,0 +1,84 @@
+# Nutritional Risk Analysis of Fast-Food Diets
+
+This project is a data analysis study focused on assessing potential health risks associated with long-term consumption of food from a single fast-food restaurant.
+
+The analysis is based on nutritional data and compares estimated daily intake with recommended norms provided by the World Health Organization (WHO).
+
+## 📌 Project Motivation
+
+Fast-food restaurants are widely accessible, and many people consume meals from the same chains regularly.  
+The goal of this project is to explore how a diet based exclusively on one restaurant may affect health over time.
+
+The project compares multiple restaurants and evaluates deviations from recommended nutritional norms, as well as potential short- and long-term health risks.
+
+## 🗂 Data Preparation
+
+- Missing values (NaN) were analyzed and treated as zeros based on their position and frequency.
+- Non-informative features (e.g. columns with constant values) were removed.
+- Median dishes were used to represent a typical meal from each restaurant.
+
+## ⚙️ Methodology
+
+Two simplified nutritional risk models were developed.
+
+### Model 1 — Satiety-Based Intake
+
+This model estimates daily nutrient intake based on a custom satiety formula:
+Satiety = (2 × protein) + (1.5 × fiber) + (1 × fat) − (0.5 × sugar)
+**Satiety score**  
+
+- Protein and fiber were weighted higher due to their strong influence on satiety.
+- Sugar was assigned a negative weight due to its association with rapid hunger return.
+- A satiety score above 60 was considered sufficient for one meal.
+- Daily intake was estimated assuming three meals per day.
+
+This model highlights nutritional imbalances even when subjective satiety is achieved.
+
+### Model 2 — Energy-Normalized Intake
+
+In this model, meals were scaled to meet daily energy requirements exactly.
+
+The focus was shifted toward:
+- cardiovascular risks
+- metabolic disorders
+- micronutrient deficiencies
+- digestive health
+
+## 📊 Risk Assessment
+
+Health risks were categorized by:
+- severity (high risk, moderate risk, minor impact)
+- estimated time of symptom onset (weeks, months, long-term)
+
+Restaurants were ranked based on cumulative risk scores.
+
+## 📈 Results
+
+Both models indicate that exclusive long-term consumption of fast food is associated with:
+- elevated cardiovascular and metabolic risks
+- micronutrient deficiencies
+- digestive system issues
+
+Although the models are simplified, the overall conclusion remains robust across assumptions.
+
+## ⚠️ Limitations
+
+- Individual dietary preferences were not considered.
+- Behavioral factors and food variety were not modeled.
+- Median dishes may not accurately represent real eating patterns.
+
+## 🔍 Future Work
+
+Potential improvements include:
+- modeling individual food choices instead of median dishes
+- incorporating dietary behavior and social factors
+- combining nutritional risks with lifestyle-related risks
+
+## 🧪 How to Run
+
+Open the Jupyter Notebook in Google Colab or Jupyter Notebook and execute the cells sequentially.
+
+## 📚 Data Sources
+
+- World Health Organization (WHO) dietary recommendations
+- Public nutritional datasets of fast-food restaurants
