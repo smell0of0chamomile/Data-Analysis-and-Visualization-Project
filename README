@@ -4,20 +4,20 @@ This project is a data analysis study focused on assessing potential health risk
 
 The analysis is based on nutritional data and compares estimated daily intake with recommended norms provided by the World Health Organization (WHO).
 
-## 📌 Project Motivation
+##  Project Motivation
 
 Fast-food restaurants are widely accessible, and many people consume meals from the same chains regularly.  
 The goal of this project is to explore how a diet based exclusively on one restaurant may affect health over time.
 
 The project compares multiple restaurants and evaluates deviations from recommended nutritional norms, as well as potential short- and long-term health risks.
 
-## 🗂 Data Preparation
+##  Data Preparation
 
 - Missing values (NaN) were analyzed and treated as zeros based on their position and frequency.
 - Non-informative features (e.g. columns with constant values) were removed.
 - Median dishes were used to represent a typical meal from each restaurant.
 
-## ⚙️ Methodology
+##  Methodology
 
 Two simplified nutritional risk models were developed.
 
@@ -44,7 +44,7 @@ The focus was shifted toward:
 - micronutrient deficiencies
 - digestive health
 
-## 📊 Risk Assessment
+##  Risk Assessment
 
 Health risks were categorized by:
 - severity (high risk, moderate risk, minor impact)
@@ -52,7 +52,7 @@ Health risks were categorized by:
 
 Restaurants were ranked based on cumulative risk scores.
 
-## 📈 Results
+##  Results
 
 Both models indicate that exclusive long-term consumption of fast food is associated with:
 - elevated cardiovascular and metabolic risks
@@ -61,24 +61,24 @@ Both models indicate that exclusive long-term consumption of fast food is associ
 
 Although the models are simplified, the overall conclusion remains robust across assumptions.
 
-## ⚠️ Limitations
+##  Limitations
 
 - Individual dietary preferences were not considered.
 - Behavioral factors and food variety were not modeled.
 - Median dishes may not accurately represent real eating patterns.
 
-## 🔍 Future Work
+##  Future Work
 
 Potential improvements include:
 - modeling individual food choices instead of median dishes
 - incorporating dietary behavior and social factors
 - combining nutritional risks with lifestyle-related risks
 
-## 🧪 How to Run
+##  How to Run
 
 Open the Jupyter Notebook in Google Colab or Jupyter Notebook and execute the cells sequentially.
 
-## 📚 Data Sources
+##  Data Sources
 
 - World Health Organization (WHO) dietary recommendations
 - Public nutritional datasets of fast-food restaurants
